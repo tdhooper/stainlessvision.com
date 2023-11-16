@@ -1,0 +1,349 @@
+body, textarea, pre {
+    font-size: 14px;
+    font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", Consolas, monospace;
+    color: #999;
+}
+
+
+* {margin: 0; padding: 0;}
+
+
+h1, h2, h3, h4, h5, p, ol, ul, ul.links, li, table, dl, dt, dd, label, input, textarea, pre, legend {
+    font-size: 1em; /* 13px */
+    line-height: 1.5385em; /* 20px */
+    margin: 0 0 0.76925em 0; 
+}
+
+input, textarea {
+    background: #eee;
+    border: none;
+    padding: 10px 0 0 10px;
+}
+
+input {
+    padding: 10px;
+}
+
+label {
+    padding-right: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    letter-spacing: 0.05em
+}
+
+h1 {
+    font-size: 3.5em;
+    line-height: 1.2em;
+    padding-top: 0.3em;
+    margin-bottom: 0;  
+    font-weight: normal;
+    }
+    
+h2 {
+    font-size: 2.3077em; /* 30px */
+    line-height: 1.3333em; /* 40px */
+    margin-top: 0.6667em;
+    margin-bottom: 0;
+    font-weight: normal;
+    }   
+    
+h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-style: italic;
+    
+    font-size: 1.9231em; /* 25px */
+    line-height: 1.2em; /* 30px */
+    margin-bottom: 0.4em;
+    margin-top: 0.8em;
+    }
+
+h4 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-style: italic;
+    
+    font-size: 1.3846em; /* 15px */
+    line-height: 1.5556em; /* 23.334 */
+    margin-top: 0;
+    margin-bottom: 0.6667em;
+    } 
+    
+h4:before {
+/*  content:"—";
+    margin-right: 0.5em;
+    margin-left: -1.3em;*/
+    }
+    
+h5 {
+    font-size:1em;
+    margin-bottom: 0;
+    }
+
+a {
+    color: rgb(255, 110, 36);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0 0 0 0.8em;
+    }
+
+pre {
+    font-family: monospace;
+}
+
+legend {font-weight: bold;}
+
+.rm {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+.cl {
+    clear: both;
+}
+
+
+/* ============================ CUSTOM ============================ */
+
+
+html,
+body {
+    height: 100%;
+    background: #000;
+}
+
+
+.content {
+    position: relative;
+    overflow: hidden;
+    width: 560px;
+    z-index: 1;
+    padding: 80px 0 0 80px;
+}
+
+li, p, h1, h2 {
+    background: rgba(0, 0, 0, 0.82);
+    float: left;
+    clear: left;
+}
+
+ul {
+    color: #999;
+    clear: left;
+}
+
+li, p, h1, h2 {
+    margin-bottom: 7px;
+    margin-right: 7px;
+    padding: 10px 12px;
+}
+
+li {
+    clear: none;
+}
+
+
+img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+h1 {
+    color: #ccc;
+    font-size: 3em;
+}
+
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 720px;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.background-inner {
+    position: relative;
+    min-width: 1100px;
+    min-height: 1200px;  
+}
+
+.spinner--one,
+.wobble--one {
+    height: 1024px;
+    width: 1024px; 
+}
+.spinner--two,
+.wobble--two {
+    width: 320px;
+    height: 320px;
+}
+.spinner--three,
+.wobble--three {
+    width: 100px;
+    height: 100px; 
+}
+
+.blur--two {
+    filter: blur(1.5px); 
+    -webkit-filter: blur(1.5px); 
+    -moz-filter: blur(1.5px); 
+    -o-filter: blur(1.5px); 
+}
+
+.blur--three {
+    filter: blur(3px);    
+    -webkit-filter: blur(3px);    
+    -moz-filter: blur(3px);    
+    -o-filter: blur(3px);    
+}
+
+.wobble {
+    position: absolute;
+    overflow: hidden;  
+}
+
+.wobble--one {
+    top: -340px;
+    left: -300px;
+    animation:          wobble--one 2.5s ease-in-out infinite;
+    -moz-animation:     wobble--one 2.5s ease-in-out infinite;
+    -webkit-animation:  wobble--one 2.5s ease-in-out infinite;
+    -o-animation:       wobble--one 2.5s ease-in-out infinite;
+}
+
+.wobble--two {
+    top: 340px;
+    left: 40%;
+    margin-left: 230px;
+    animation:          wobble--two 3.5s ease-in-out infinite;
+    -moz-animation:     wobble--two 3.5s ease-in-out infinite;
+    -webkit-animation:  wobble--two 3.5s ease-in-out infinite;
+    -o-animation:       wobble--two 3.5s ease-in-out infinite;
+
+    z-index: 1;
+}
+
+.wobble--three {
+    top: 150px;
+    left: 80%;
+    margin-left: 60px;
+    animation:          wobble--three 2s ease-in-out infinite;
+    -moz-animation:     wobble--three 2s ease-in-out infinite;
+    -webkit-animation:  wobble--three 2s ease-in-out infinite;
+    -o-animation:       wobble--three 2s ease-in-out infinite;
+}
+
+@keyframes         wobble--one { 50% { transform:         translate(0, 10px); } 100% { transform:         translate(0, 0); } }
+@-moz-keyframes    wobble--one { 50% { -moz-transform:    translate(0, 10px); } 100% { -moz-transform:    translate(0, 0); } }
+@-webkit-keyframes wobble--one { 50% { -webkit-transform: translate(0, 10px); } 100% { -webkit-transform: translate(0, 0); } }
+
+@keyframes         wobble--two { 50% { transform:         translate(0, -6px); } 100% { transform:         translate(0, 0); } }
+@-moz-keyframes    wobble--two { 50% { -moz-transform:    translate(0, -6px); } 100% { -moz-transform:    translate(0, 0); } }
+@-webkit-keyframes wobble--two { 50% { -webkit-transform: translate(0, -6px); } 100% { -webkit-transform: translate(0, 0); } }
+
+@keyframes         wobble--three { 50% { transform:         translate(0, -3px); } 100% { transform:         translate(0, 0); } }
+@-moz-keyframes    wobble--three { 50% { -moz-transform:    translate(0, -3px); } 100% { -moz-transform:    translate(0, 0); } }
+@-webkit-keyframes wobble--three { 50% { -webkit-transform: translate(0, -3px); } 100% { -webkit-transform: translate(0, 0); } }
+
+@media only screen and (orientation: portrait) {
+
+    .wobble--two {
+        top: 650px;
+        left: 20%;
+        margin-left: 270px;
+    }  
+
+    .wobble--three {
+        top: 1050px;
+        left: 10%;
+        margin-left: 250px;
+    }  
+ 
+}
+
+.spinner {
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.spinner--one {
+    background-image: url('http://farm6.staticflickr.com/5091/5400043364_5b6664716a_b.jpg');
+    animation:          rotate-right 300s linear infinite;
+    -webkit-animation:  rotate-right 300s linear infinite;
+    -moz-animation:     rotate-right 300s linear infinite;
+    -o-animation:       rotate-right 300s linear infinite;
+}
+
+.spinner--two {
+    background-image: url('http://farm6.staticflickr.com/5138/5400042430_bb2576d595_n.jpg');
+    animation:         rotate-left 200s linear infinite;
+    -webkit-animation: rotate-left 200s linear infinite;
+    -moz-animation:    rotate-left 200s linear infinite;
+    -o-animation:      rotate-left 200s linear infinite;
+}
+
+.spinner--three {
+    background-image: url('http://farm6.staticflickr.com/5091/5400043364_5b6664716a_t.jpg');
+    animation:         rotate-right 100s linear infinite;
+    -webkit-animation: rotate-right 100s linear infinite;
+    -moz-animation:    rotate-right 100s linear infinite;
+    -o-animation:      rotate-right 100s linear infinite;
+}
+
+@keyframes         rotate-right { to {         transform: rotate(1turn); } }
+@-webkit-keyframes rotate-right { to { -webkit-transform: rotate(1turn); } }
+@-moz-keyframes    rotate-right { to {    -moz-transform: rotate(1turn); } }
+@-o-keyframes      rotate-right { to {      -o-transform: rotate(1turn); } }
+
+@keyframes         rotate-left { to {         transform: rotate(-1turn); } }
+@-webkit-keyframes rotate-left { to { -webkit-transform: rotate(-1turn); } }
+@-moz-keyframes    rotate-left { to {    -moz-transform: rotate(-1turn); } }
+@-o-keyframes      rotate-left { to {      -o-transform: rotate(-1turn); } }
+
+
+.giftext span {
+    animation: jump 1s ease-in-out infinite;
+    display: inline-block;
+
+    text-decoration: inherit;
+}
+
+.giftext span:nth-child(2n) { animation-delay: -.15s; }
+.giftext span:nth-child(3n) { animation-delay: -.3s; }
+.giftext span:nth-child(4n) { animation-delay: -.45s; }
+
+@keyframes jump {
+    0% {
+        transform: translateY(2px);
+    }
+    50% {
+        transform: translateY(-2px);  
+    }
+    100% {
+        transform: translateY(2px);  
+    }
+}
